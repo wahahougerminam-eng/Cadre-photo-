@@ -34,7 +34,7 @@ export const PhotoEditorCanvas: React.FC<PhotoEditorCanvasProps> = ({
   transform,
   onTransformChange,
   customText,
-  topText = "English department\nGraduation day 🎓",
+  topText = "Department of English\nGraduation day 🎓",
   onOpenPhotoPicker,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);

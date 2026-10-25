@@ -185,8 +185,8 @@ export function renderOfficialFrameVisual(
     ctx.drawImage(punched, 0, 0, w, h);
   }
 
-  // 3. LAYER 3: Top Header "English department\nGraduation day 🎓"
-  const defaultTop = "English department\nGraduation day 🎓";
+  // 3. LAYER 3: Top Header "Department of English\nGraduation day 🎓"
+  const defaultTop = "Department of English\nGraduation day 🎓";
   const displayTop = (topText !== undefined && topText.trim() !== '' ? topText : defaultTop).trim();
   if (displayTop) {
     ctx.save();
@@ -205,6 +205,9 @@ export function renderOfficialFrameVisual(
       // 2 lines: Line 1 department subtitle, Line 2 graduation day title with 🎓 behind
       ctx.font = '800 24px "Plus Jakarta Sans", sans-serif';
       ctx.letterSpacing = '2.5px';
+      if (ctx.measureText(lines[0].toUpperCase()).width > w - 100) {
+        ctx.font = '800 20px "Plus Jakarta Sans", sans-serif';
+      }
       ctx.fillText(lines[0].toUpperCase(), cx, 132);
 
       let line2 = lines[1];

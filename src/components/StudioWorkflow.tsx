@@ -72,7 +72,7 @@ export const StudioWorkflow: React.FC<StudioWorkflowProps> = ({ onBackToHome }) 
   });
 
   // Step 3: Text fields
-  const [topText, setTopText] = useState<string>("English department\nGraduation day 🎓");
+  const [topText, setTopText] = useState<string>("Department of English\nGraduation day 🎓");
   const [customText, setCustomText] = useState<string>("J'y serai");
 
   // Export states
@@ -405,7 +405,7 @@ export const StudioWorkflow: React.FC<StudioWorkflowProps> = ({ onBackToHome }) 
                 </div>
                 <h3 className="text-xl font-bold text-white">Le Cadre Officiel</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Voici le cadre officiel prêt à accueillir votre photo. Il est composé d’un cercle central épuré, des mentions « English department / Graduation day 🎓 » et d’une vague bleue marine.
+                  Voici le cadre officiel prêt à accueillir votre photo. Il est composé d’un cercle central épuré, des mentions « Department of English / Graduation day 🎓 » et d’une vague bleue marine.
                 </p>
               </div>
 
@@ -566,7 +566,7 @@ export const StudioWorkflow: React.FC<StudioWorkflowProps> = ({ onBackToHome }) 
                   rows={2}
                   value={topText}
                   onChange={(e) => setTopText(e.target.value)}
-                  placeholder="English department&#10;Graduation day 🎓"
+                  placeholder="Department of English&#10;Graduation day 🎓"
                   maxLength={60}
                   className="w-full bg-slate-950 border border-slate-700 focus:border-blue-500 rounded-xl px-4 py-2 text-sm font-bold text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all tracking-wide resize-none"
                 />
@@ -576,14 +576,14 @@ export const StudioWorkflow: React.FC<StudioWorkflowProps> = ({ onBackToHome }) 
                   <span className="text-[11px] text-slate-500">Presets :</span>
                   <button
                     type="button"
-                    onClick={() => setTopText("English department\nGraduation day 🎓")}
+                    onClick={() => setTopText("Department of English\nGraduation day 🎓")}
                     className="px-2 py-0.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-blue-300 transition-colors"
                   >
-                    English department / Graduation day 🎓
+                    Department of English / Graduation day 🎓
                   </button>
                   <button
                     type="button"
-                    onClick={() => setTopText("ENGLISH DEPARTMENT\nGRADUATION DAY 🎓")}
+                    onClick={() => setTopText("DEPARTMENT OF ENGLISH\nGRADUATION DAY 🎓")}
                     className="px-2 py-0.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-blue-300 transition-colors"
                   >
                     MAJUSCULES

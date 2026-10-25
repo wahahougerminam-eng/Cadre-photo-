@@ -36,14 +36,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onStartCreation }) => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white font-serif-academic leading-[1.15] text-balance">
-            English department <br />
+            Department of English <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">
               Graduation day 🎓
             </span>
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Personnalisez votre cadre officiel « English department / Graduation day 🎓 » en 3 étapes simples : visualisez le cadre, importez votre photo et ajoutez la mention « J’y serai ».
+            Personnalisez votre cadre officiel « Department of English / Graduation day 🎓 » en 3 étapes simples : visualisez le cadre, importez votre photo et ajoutez la mention « J’y serai ».
           </p>
 
           {/* Primary CTA */}
